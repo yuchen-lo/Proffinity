@@ -30,7 +30,7 @@ Inside the Proffinity directory,
 voila featurizev2.ipynb
 ````
 
-Module operation example: 
+Module operation steps: 
 ![image](https://github.com/user-attachments/assets/d02e995c-9f38-47fa-9532-065c6e0b687f)
 
 The user has the opportunity to visualize and further filter the extracted feature when the feature extraction process is completed:
@@ -59,11 +59,20 @@ Inside the Proffinity directory,
 
 ````
 voila ml_regressorv2.ipynb
-````   
+````
 
+Module operation steps:
 
+1. select and load the desired ML model:
+![image](https://github.com/user-attachments/assets/a9597fe2-c61e-4f99-ba0a-1902a2ade10b)
 
+2. load input features:
+![image](https://github.com/user-attachments/assets/8ab62342-6680-463f-8ce3-e3093985e6b7)
 
+3. Analyze the prediction outputs:
+![image](https://github.com/user-attachments/assets/b5b6556e-f26a-4480-8ca0-178b70bc1017)
+
+## Visualization module
 
 
 
