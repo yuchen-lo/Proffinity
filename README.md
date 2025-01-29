@@ -10,12 +10,6 @@ pip install ipython ipywidgets numpy pandas plotly pycaret scikit_learn matplotl
 ````
 The Proffinity program is consisted of three modules, featurizev2.ipynb, ml_regressorv2.ipynb, and visualizationv2.ipynb, each is run using voila as user-interface. 
 
-Inside the Proffinity directory,
-
-````
-voila featurizev2.ipynb
-````
-
 ## Featurize module
 
 The purpose of the featurize module is the extract machine learning features from binary complexes for the ML prediction module as well as the graph connectivity information for the visualzation module.
@@ -29,10 +23,17 @@ Outputs:
 1. the extracted features will be saved to the file with name ppi_index_extract_"username".csv where "username" is defmined by the input csv file.
 2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (note: do not change the folder name as the program will search for it).
 
-Module peration example: 
+Inside the Proffinity directory,
+
+````
+voila featurizev2.ipynb
+````
+
+Module operation example: 
 ![image](https://github.com/user-attachments/assets/d02e995c-9f38-47fa-9532-065c6e0b687f)
 
-
+The user has the opportunity to visualize and further filter the extracted feature when the feature extraction process is completed:
+![image](https://github.com/user-attachments/assets/60490145-fda4-400c-b2a7-9b7804b69e5a)
 
 
 
