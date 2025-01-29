@@ -2,6 +2,8 @@
 
 ![image](https://github.com/user-attachments/assets/f9a9bb6f-e401-43d1-a70a-54fd70a7fd1c)
 
+## Installation
+
 To run Proffinity, clone this github repo and install the following packages using pip install:
 ````
 pip install ipython ipywidgets numpy pandas plotly pycaret scikit_learn matplotlib seaborn voila
@@ -13,6 +15,8 @@ Inside the Proffinity directory,
 ````
 voila featurizev2.ipynb
 ````
+
+## Featurize module
 
 
 
