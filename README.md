@@ -18,8 +18,10 @@ voila
 The Proffinity program is consisted of three modules, featurizev2.ipynb, ml_regressorv2.ipynb, and visualizationv2.ipynb, each is run using voila as user-interface. 
 
 Inside the Proffinity directory,
-voila featurizev2.ipynb
 
+'''
+voila featurizev2.ipynb
+'''
 
 
 
