@@ -45,6 +45,7 @@ Inputs:
 2. the extracted features (ppi_index_extract_"username".csv) from the featurize module. The csv file can be selected directly from the UI.
 
 Output:
+
 we divided the output data as validation set (kd data provided) and/or test set (kd data not provided).
 
 1. for validation set:
@@ -74,6 +75,18 @@ Module operation steps:
 
 ## Visualization module
 
+The purpose of the visualization module is to identify key residues and interactions that contribute to complexes' binding activity (or inactivity).
 
+Inputs:
+1. feature importance from a pre-trained extra tree regressor model. This FI is used as weight coefficent for subsequent scoring.
+2. a target complex structure in the "model" folder and associated graph connectivity data in the "raw_graphv2" folder.
 
+Outputs:
+Interative structure model that highlight key residues and interactions based on user defined criteria. 
 
+To run:  
+Inside the Proffinity directory,
+
+````
+voila visualizationv2.ipynb
+````
