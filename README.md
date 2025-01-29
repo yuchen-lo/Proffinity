@@ -23,6 +23,7 @@ Outputs:
 1. the extracted features will be saved to the file with name ppi_index_extract_"username".csv where "username" is defmined by the input csv file.
 2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (note: do not change the folder name as the program will search for it).
 
+To run:
 Inside the Proffinity directory,
 
 ````
@@ -34,6 +35,35 @@ Module operation example:
 
 The user has the opportunity to visualize and further filter the extracted feature when the feature extraction process is completed:
 ![image](https://github.com/user-attachments/assets/60490145-fda4-400c-b2a7-9b7804b69e5a)
+
+## ML Prediction module
+
+The purpose of the ML prediction module is to predict binding affinity (kd) of the input complexes based on the extracted features from the Featurize module.
+
+Inputs:
+1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the UI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train the model using additional data).
+2. the extracted features (ppi_index_extract_"username".csv) from the featurize module. The csv file can be selected directly from the UI.
+
+Output:
+we divided the output data as validation set (kd data provided) and/or test set (kd data not provided).
+
+1. for validation set:
+   - correlation (R2) between predicted and experimental kd values.
+   - bar graph compared experimental and predicted kd (RMSE).    
+
+2. for test set:
+   - histogram distribution of predicted kd values.
+
+To run:  
+Inside the Proffinity directory,
+
+````
+voila ml_regressorv2.ipynb
+````   
+
+
+
+
 
 
 
