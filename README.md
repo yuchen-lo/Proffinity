@@ -18,6 +18,9 @@ voila featurizev2.ipynb
 
 ## Featurize module
 
+![image](https://github.com/user-attachments/assets/d02e995c-9f38-47fa-9532-065c6e0b687f)
+
+
 
 
 
