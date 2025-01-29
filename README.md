@@ -90,3 +90,14 @@ Inside the Proffinity directory,
 ````
 voila visualizationv2.ipynb
 ````
+Module operation steps:
+1. load model FI and target structures:
+![image](https://github.com/user-attachments/assets/657a28b5-e241-4bd8-ad12-bd598bc23c1b)
+
+
+2. visualize key residues and interactions:
+![image](https://github.com/user-attachments/assets/884ed8cc-8585-492b-bbfa-b6811ee75992)
+
+
+
+
