@@ -19,9 +19,9 @@ The Proffinity program is consisted of three modules, featurizev2.ipynb, ml_regr
 
 Inside the Proffinity directory,
 
-'''
+````
 voila featurizev2.ipynb
-'''
+````
 
 
 
