@@ -15,7 +15,7 @@ The Proffinity program is consisted of three modules, featurizev2.ipynb, ml_regr
 The purpose of the featurize module is the extract machine learning features from binary complexes for the ML prediction module as well as the graph connectivity information for the visualzation module.
 
 ### Inputs:
-1. a list of protein_id and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use 'nan' value for the entry. The input file should be named as
+1. a list of protein_id (ex. if the protein complex is name.pdb then the protein_id will be name) and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use 'nan' value for the entry. The input file should be named as
    input_"username".csv
 3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The structure should be inside the 'model' folder (note: do not change the folder name as the program will search for it).   
 
