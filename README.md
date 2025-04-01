@@ -1,6 +1,7 @@
 # Proffinity
 
-![fig1](https://github.com/user-attachments/assets/976d2c03-9c55-40cc-9fd3-ca8264cba27a)
+![pic1](https://github.com/user-attachments/assets/af65266b-2f05-404b-b86e-57aa0b2943f3)
+
 
 ## Installation
 
