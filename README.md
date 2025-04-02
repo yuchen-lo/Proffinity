@@ -44,7 +44,7 @@ The user has the opportunity to visualize and further filter the extracted featu
 
 ## ML Prediction module
 
-The purpose of the ML prediction module is to predict binding affinity (kd) of the input complexes based on the extracted features from the Featurize module.
+The purpose of the ML prediction module is to predict binding affinity (K<sub>D</sub>) of the input complexes based on the extracted features from the Featurize module.
 
 Inputs:
 1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the UI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train the model using additional data).
