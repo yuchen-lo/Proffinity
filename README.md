@@ -83,14 +83,14 @@ Module operation steps:
 
 The purpose of the visualization module is to identify key residues and interactions that contribute to complexes' binding activity (or inactivity).
 
-Inputs:
+### Inputs:
 1. feature importance from a pre-trained extra tree regressor model. This FI is used as weight coefficent for subsequent scoring.
 2. a target complex structure in the "model" folder and associated graph connectivity data in the "raw_graphv2" folder.
 
-Outputs:
+### Outputs:
 Interative structure model that highlight key residues and interactions based on user defined criteria. 
 
-To run:  
+### To run:  
 Inside the Proffinity directory,
 
 ````
