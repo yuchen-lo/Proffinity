@@ -82,7 +82,7 @@ Module operation steps:
 ![image](https://github.com/user-attachments/assets/b5b6556e-f26a-4480-8ca0-178b70bc1017)
 
 
-Optional: ML model retraining with customize dataset
+## Optional: ML model retraining with customize dataset
 
 ### Input preparation:
 1. the extracted features (ppi_index_extract_"username".csv) from the featurize module.
