@@ -78,7 +78,7 @@ Module operation steps:
 ![image](https://github.com/user-attachments/assets/a9597fe2-c61e-4f99-ba0a-1902a2ade10b)
 
 2. load input features:
-![image](https://github.com/user-attachments/asse<sub></sub>ts/8ab62342-6680-463f-8ce3-e3093985e6b7)
+![image](https://github.com/user-attachments/assets/8ab62342-6680-463f-8ce3-e3093985e6b7)
 
 3. Analyze the prediction outputs:
 ![image](https://github.com/user-attachments/assets/b5b6556e-f26a-4480-8ca0-178b70bc1017)
