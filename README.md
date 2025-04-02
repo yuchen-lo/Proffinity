@@ -57,11 +57,11 @@ We recommended running this module with a few complexes with known (K<sub>D</sub
 we divided the output data as validation set (kd data provided) and/or test set (kd data not provided).
 
 1. for validation set:
-   - correlation (R2) between predicted and experimental kd values.
-   - bar graph compared experimental and predicted kd (RMSE).    
+   - correlation (R<sup>2</sup>) between predicted and experimental K<sub>D</sub> values.
+   - bar graph compared experimental and predicted K<sub>D</sub> (RMSE).    
 
 2. for test set:
-   - histogram distribution of predicted kd values.
+   - histogram distribution of predicted K<sub>D</sub> values.
 
 ### To run:  
 Inside the Proffinity directory,
