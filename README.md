@@ -14,7 +14,7 @@ The Proffinity program is consisted of three modules,
 - ml_regressorv2.ipynb
 - visualizationv2.ipynb
 
-each is running through voila as graphic user interface (GUI). 
+each is running through [Voila] (https://voila.readthedocs.io/en/stable/) as graphic user interface (GUI). 
 
 ## Featurize module
 
