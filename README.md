@@ -13,6 +13,7 @@ The Proffinity program is consisted of three modules,
 - featurizev2.ipynb
 - ml_regressorv2.ipynb
 - visualizationv2.ipynb
+
 each is running through voila as graphic user interface (GUI). 
 
 ## Featurize module
