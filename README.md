@@ -27,7 +27,7 @@ The purpose of the featurize module is the extract machine learning features fro
 
 ### Outputs:
 1. the extracted features will be saved to the file with name ppi_index_extract_"username".csv where "username" is defmined by the input csv file.
-2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (note: do not change the folder name as the program will search for it).
+2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (note: do not change the folder name).
 
 ### To run:
 Inside the Proffinity directory,
