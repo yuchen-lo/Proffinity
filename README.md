@@ -46,6 +46,10 @@ The user has the opportunity to visualize and further filter the extracted featu
 
 The purpose of the ML prediction module is to predict binding affinity (K<sub>D</sub>) of the input complexes based on the extracted features from the Featurize module.
 
+We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R2 and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend the user to go through an additional model retraining step by including the validation set into the training data and retrain the model using the ml_regressor_train.ipynb script. 
+
+
+
 ### Inputs:
 1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the UI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train the model using additional data).
 2. the extracted features (ppi_index_extract_"username".csv) from the featurize module. The csv file can be selected directly from the UI.
@@ -74,7 +78,7 @@ Module operation steps:
 ![image](https://github.com/user-attachments/assets/a9597fe2-c61e-4f99-ba0a-1902a2ade10b)
 
 2. load input features:
-![image](https://github.com/user-attachments/assets/8ab62342-6680-463f-8ce3-e3093985e6b7)
+![image](https://github.com/user-attachments/asse<sub></sub>ts/8ab62342-6680-463f-8ce3-e3093985e6b7)
 
 3. Analyze the prediction outputs:
 ![image](https://github.com/user-attachments/assets/b5b6556e-f26a-4480-8ca0-178b70bc1017)
@@ -84,13 +88,13 @@ Module operation steps:
 The purpose of the visualization module is to identify key residues and interactions that contribute to complexes' binding activity (or inactivity).
 
 ### Inputs:
-1. feature importance from a pre-trained extra tree regressor model. This FI is used as weight coefficent for subsequent scoring.
+1. feature importance (FI) from a pre-trained extra tree regressor model. The FI is used as weight coefficent for subsequent scoring.
 2. a target complex structure in the "model" folder and associated graph connectivity data in the "raw_graphv2" folder.
 
 ### Outputs:
 Interative structure model that highlight key residues and interactions based on user defined criteria. 
 
-### To run:  
+### To run:  <sub></sub>
 Inside the Proffinity directory,
 
 ````
