@@ -48,8 +48,6 @@ The purpose of the ML prediction module is to predict binding affinity (K<sub>D<
 
 We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R<sup>2</sup> and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend the user to go through an additional model retraining step by including the validation set into the training data and retrain the model using the provided ml_regressor_train.ipynb script. 
 
-
-
 ### Inputs:
 1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the UI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train the model using additional data).
 2. the extracted features (ppi_index_extract_"username".csv) from the featurize module. The csv file can be selected directly from the UI.
@@ -82,6 +80,29 @@ Module operation steps:
 
 3. Analyze the prediction outputs:
 ![image](https://github.com/user-attachments/assets/b5b6556e-f26a-4480-8ca0-178b70bc1017)
+
+
+Optional: ML model retraining with customize dataset
+
+### Input preparation:
+1. the extracted features (ppi_index_extract_"username".csv) from the featurize module.
+2. open the "train" folder and determine the reference features (.csv) to be combined with user's customize feature.
+3. remove the header from "username".csv and combine user's features with one of the given reference features into one single .csv file.
+4. rename the combined features file.
+
+### Output:
+
+the script will generate two outputs:
+
+1. a customized ml regressor model file (.plk).
+2. feature importance file (.csv)
+
+### To run:
+Inside the "Training" directory,
+
+````
+voila ml_regresso_train.ipynb
+````
 
 ## Visualization module
 
