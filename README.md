@@ -58,11 +58,11 @@ We divided the output data as validation set (K<sub>D</sub> data provided) and/o
 1. for validation set:
    - correlation (R<sup>2</sup>) between predicted and experimental K<sub>D</sub> values.
    - bar graph compared experimental and predicted K<sub>D</sub> (RMSE).
-   - a csv output file "pred_ppi_index_extract_inputname_by_modelname_vset.csv."    
+   - a csv output file pred_ppi_index_extract_"inputname"_by_"modelname"_vset.csv    
 
 2. for test set:
    - histogram distribution of predicted K<sub>D</sub> values.
-   - a csv output file "pred_ppi_index_extract_inputname_by_modelname_vset.csv"
+   - a csv output file pred_ppi_index_extract_"inputname"_by_"modelname"_vset.csv
 
 ### To run:  
 Inside the Proffinity directory,
