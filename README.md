@@ -43,7 +43,7 @@ The user has the opportunity to visualize and further filter the extracted featu
 
 ## ML Prediction Module
 
-The purpose of the ML prediction module is to predict binding affinity (K<sub>D</sub>) of the input complexes based on the extracted features from the Featurize module.
+The purpose of the ML prediction module is to predict binding affinity (K<sub>D</sub>) of the input complexes based on the extracted features from the featurization module.
 
 We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R<sup>2</sup> and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend generating a cutomized models by incoporating user provided data using the ml_regressor_train.ipynb script. 
 
