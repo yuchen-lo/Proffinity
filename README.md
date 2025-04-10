@@ -102,7 +102,7 @@ the script will generate two outputs:
 Inside the "Training" directory,
 
 ````
-voila ml_regresso_train.ipynb
+jupyter notebook ml_regresso_train.ipynb
 ````
 
 ## Visualization Module
