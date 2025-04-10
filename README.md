@@ -86,14 +86,14 @@ Module operation steps:
 ## Optional: ML model retraining with customize dataset
 
 ### Input preparation:
-1. the extracted features (ppi_index_extract_"username".csv) from the featurize module.
+1. the extracted features (ppi_index_extract_'username'.csv) from the featurize module.
 2. open the "train" folder and determine the reference features (.csv) to be combined with user's customize feature.
-3. remove the header from "username".csv and combine user's features with one of the given reference features into one single .csv file.
+3. remove the header from "username.csv" and combine user's features with one of the given reference features into one single .csv file.
 4. rename the combined features file.
 
 ### Output:
 
-the script will generate two outputs:
+The script will generate two outputs:
 
 1. a customized ml regressor model file (.plk).
 2. feature importance file (.csv)
