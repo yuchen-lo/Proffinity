@@ -49,11 +49,11 @@ We recommended running this module with a few complexes with known (K<sub>D</sub
 
 ### Inputs:
 1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the GUI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train their cutomized model using their own data).
-2. the extracted features (must be named in the format of ppi_index_extract_"username".csv) from the featurize module. The csv file can also be selected directly from the GUI.
+2. the extracted features from the featurization module (must be named in the format of ppi_index_extract_"inputrname".csv). The csv file can also be selected directly from the GUI.
 
 ### Output:
 
-we divided the output data as validation set (kd data provided) and/or test set (kd data not provided).
+we divided the output data as validation set (K<sub>D</sub> data provided) and/or test set (K<sub>D</sub> data not provided).
 
 1. for validation set:
    - correlation (R<sup>2</sup>) between predicted and experimental K<sub>D</sub> values.
