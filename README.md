@@ -16,7 +16,7 @@ The Proffinity program is consisted of three modules,
 
 each is running through [Voila](https://voila.readthedocs.io/en/stable/) as graphic user interface (GUI). 
 
-## Featurize module
+## Featurization Module
 
 The purpose of the featurize module is the extract machine learning features from binary complexes for the ML prediction module as well as the graph connectivity information for the visualzation module.
 
@@ -43,7 +43,7 @@ Module operation steps:
 The user has the opportunity to visualize and further filter the extracted feature when the feature extraction process is completed:
 ![image](https://github.com/user-attachments/assets/60490145-fda4-400c-b2a7-9b7804b69e5a)
 
-## ML Prediction module
+## ML Prediction Module
 
 The purpose of the ML prediction module is to predict binding affinity (K<sub>D</sub>) of the input complexes based on the extracted features from the Featurize module.
 
@@ -107,7 +107,7 @@ Inside the "Training" directory,
 voila ml_regresso_train.ipynb
 ````
 
-## Visualization module
+## Visualization Module
 
 The purpose of the visualization module is to identify key residues and interactions that contribute to complexes' binding activity (or inactivity).
 
