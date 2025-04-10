@@ -26,7 +26,7 @@ The purpose of the featurize module is the extract machine learning features fro
 3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The structure should be inside the 'model' folder (note: do not change the folder name "model").   
 
 ### Outputs:
-1. the extracted features will be saved to the file with name ppi_index_extract_"inputname".csv where "inputname" is defmined by the input csv file.<sub></sub>
+1. the extracted features will be saved to the file with name ppi_index_extract_"inputname".csv where "inputname" is the name of input csv file.<sub></sub>
 2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (_note_: do not change the folder name "raw_graphv2").
 3. a csv output file "ppi_index_extract_inputname.csv"
 
