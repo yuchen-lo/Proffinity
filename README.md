@@ -21,7 +21,7 @@ each is running through [Voila](https://voila.readthedocs.io/en/stable/) as grap
 The purpose of the featurize module is to extract machine learning features from binary complexes for the ML prediction module as well as the graph connectivity information for the visualzation module.
 
 ### Inputs:
-1. a list of protein_id (_eg._ if the protein complex is "name.pdb" then the protein_id will be "name") and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use 'nan' value instead. The input file should be named as input_"inputname".csv
+1. a list of protein_id (_eg._ if the protein complex is "name.pdb" then the protein_id will be "name") and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use "nan" value instead. The input file should be named as input_"inputname".csv
 3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The PDB files of complex structures should be inside the 'model' folder (note: do not change the folder name "model").   
 
 ### Outputs:
@@ -45,7 +45,7 @@ The user has the opportunity to visualize and further filter the extracted featu
 
 The purpose of the ML prediction module is to predict binding affinity (K<sub>D</sub>) of the input complexes based on the extracted features from the Featurize module.
 
-We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R<sup>2</sup> and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend the user to go through an additional model retraining step by including the validation set into the training data and retrain the model using the provided ml_regressor_train.ipynb script. 
+We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R<sup>2</sup> and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend generating an cutomized models by incoporating user provided data using the ml_regressor_train.ipynb script. 
 
 ### Inputs:
 1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the GUI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train their cutomized model using their own data).
