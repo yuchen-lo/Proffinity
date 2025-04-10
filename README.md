@@ -10,9 +10,9 @@ To run Proffinity, clone this github repo and install the following packages usi
 pip install ipython ipywidgets numpy pandas plotly pycaret scikit_learn matplotlib seaborn voila
 ````
 The Proffinity program is consisted of three modules, 
-- Featurize module
-- ML Prediction module
-- Visualization module
+- Featurization Module
+- ML Prediction Module
+- Visualization Module
 
 each is running through [Voila](https://voila.readthedocs.io/en/stable/) as graphic user interface (GUI). 
 
