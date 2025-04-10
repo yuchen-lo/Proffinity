@@ -21,14 +21,12 @@ each is running through [Voila](https://voila.readthedocs.io/en/stable/) as grap
 The purpose of the featurize module is to extract machine learning features from binary complexes for the ML prediction module as well as the graph connectivity information for the visualzation module.
 
 ### Inputs:
-1. a list of protein_id (_eg._ if the protein complex is name.pdb then the protein_id will be name) and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use 'nan' value for the entry. The input file should be named as
-   input_"username".csv
+1. a list of protein_id (_eg._ if the protein complex is "name.pdb" then the protein_id will be "name") and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use 'nan' value instead. The input file should be named as input_"inputname".csv
 3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The PDB files of complex structures should be inside the 'model' folder (note: do not change the folder name "model").   
 
 ### Outputs:
 1. the extracted features will be saved to the file with name ppi_index_extract_"inputname".csv where "inputname" is the name of input csv file.<sub></sub>
 2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (_note_: do not change the folder name "raw_graphv2").
-3. a csv output file "ppi_index_extract_inputname.csv"
 
 ### To run:
 Inside the Proffinity directory,
@@ -50,8 +48,8 @@ The purpose of the ML prediction module is to predict binding affinity (K<sub>D<
 We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R<sup>2</sup> and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend the user to go through an additional model retraining step by including the validation set into the training data and retrain the model using the provided ml_regressor_train.ipynb script. 
 
 ### Inputs:
-1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the UI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train the model using additional data).
-2. the extracted features (ppi_index_extract_"username".csv) from the featurize module. The csv file can be selected directly from the UI.
+1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the GUI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train their cutomized model using their own data).
+2. the extracted features (must be named in the format of ppi_index_extract_"username".csv) from the featurize module. The csv file can also be selected directly from the GUI.
 
 ### Output:
 
