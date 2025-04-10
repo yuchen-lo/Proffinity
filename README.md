@@ -23,7 +23,7 @@ The purpose of the featurize module is to extract machine learning features from
 ### Inputs:
 1. a list of protein_id (_eg._ if the protein complex is name.pdb then the protein_id will be name) and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use 'nan' value for the entry. The input file should be named as
    input_"username".csv
-3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The structure should be inside the 'model' folder (note: do not change the folder name "model").   
+3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The PDB files of complex structures should be inside the 'model' folder (note: do not change the folder name "model").   
 
 ### Outputs:
 1. the extracted features will be saved to the file with name ppi_index_extract_"inputname".csv where "inputname" is the name of input csv file.<sub></sub>
