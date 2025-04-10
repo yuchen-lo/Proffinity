@@ -45,7 +45,7 @@ The user has the opportunity to visualize and further filter the extracted featu
 
 The purpose of the ML prediction module is to predict binding affinity (K<sub>D</sub>) of the input complexes based on the extracted features from the Featurize module.
 
-We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R<sup>2</sup> and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend generating an cutomized models by incoporating user provided data using the ml_regressor_train.ipynb script. 
+We recommended running this module with a few complexes with known (K<sub>D</sub>) using different ML models to identify the best model that optimize the validation performance. A rule-of-thumb is to aim at obtaining R<sup>2</sup> and/or RMSE values better than the provided background performance based on the SKEMPIv2 datasets. If the user cannot identify an optimal model, we recommend generating a cutomized models by incoporating user provided data using the ml_regressor_train.ipynb script. 
 
 ### Inputs:
 1. a pre-trained extra tree regressor model in the .plk format. The model has been pre-trained and can be selected directly from the GUI. (Note: We have provided a seperate ml_regressor_train.ipynb for user who want to re-train their cutomized model using their own data).
