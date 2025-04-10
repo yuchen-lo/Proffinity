@@ -23,11 +23,11 @@ The purpose of the featurize module is the extract machine learning features fro
 ### Inputs:
 1. a list of protein_id (_eg._ if the protein complex is name.pdb then the protein_id will be name) and binding affinity data (optional), 1 row per PPI complex, as two-column csv file. If the binding affinity data is not available, the user will use 'nan' value for the entry. The input file should be named as
    input_"username".csv
-3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The structure should be inside the 'model' folder (note: do not change the folder name as the program will search for it).   
+3. complex structure data file in pdb format with filename that match the protein_id in the input list from 1. The structure should be inside the 'model' folder (note: do not change the folder name "model").   
 
 ### Outputs:
 1. the extracted features will be saved to the file with name ppi_index_extract_"username".csv where "username" is defmined by the input csv file.<sub></sub>
-2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (_note_: do not change the folder name).
+2. the graph connectivity file for the complex will be generated to the "raw_graphv2" folder (_note_: do not change the folder name "raw_graphv2").
 
 ### To run:
 Inside the Proffinity directory,
@@ -58,10 +58,12 @@ we divided the output data as validation set (kd data provided) and/or test set 
 
 1. for validation set:
    - correlation (R<sup>2</sup>) between predicted and experimental K<sub>D</sub> values.
-   - bar graph compared experimental and predicted K<sub>D</sub> (RMSE).    
+   - bar graph compared experimental and predicted K<sub>D</sub> (RMSE).
+   - a csv output "pred_ppi_index_extract_inputname_by_modelname_vset.csv."    
 
 2. for test set:
    - histogram distribution of predicted K<sub>D</sub> values.
+   - a csv output "pred_ppi_index_extract_inputname_by_modelname_vset.csv"
 
 ### To run:  
 Inside the Proffinity directory,
