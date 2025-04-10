@@ -53,12 +53,12 @@ We recommended running this module with a few complexes with known (K<sub>D</sub
 
 ### Output:
 
-we divided the output data as validation set (K<sub>D</sub> data provided) and/or test set (K<sub>D</sub> data not provided).
+We divided the output data as validation set (K<sub>D</sub> data provided) and/or test set (K<sub>D</sub> data not provided).
 
 1. for validation set:
    - correlation (R<sup>2</sup>) between predicted and experimental K<sub>D</sub> values.
    - bar graph compared experimental and predicted K<sub>D</sub> (RMSE).
-   - a csv output "pred_ppi_index_extract_inputname_by_modelname_vset.csv."    
+   - a csv output file "pred_ppi_index_extract_inputname_by_modelname_vset.csv."    
 
 2. for test set:
    - histogram distribution of predicted K<sub>D</sub> values.
