@@ -9,7 +9,7 @@ Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/instal
 
 Create a new conda working environment:
 ````
-conda create -n proffinity python=8.30.0
+conda create -n proffinity python=3.9.18
 ````
 To run Proffinity, clone this github repo and install the following packages using pip install:
 
