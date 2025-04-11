@@ -7,7 +7,7 @@
 
 Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) with respect to each specific platform.
 
-Create working environment:
+Create a new conda working environment:
 ````
 conda create -n proffinity python=8.30.0
 ````
@@ -21,7 +21,7 @@ The Proffinity program is consisted of three modules,
 - ML Prediction Module
 - Visualization Module
 
-each is running through [Voila](https://voila.readthedocs.io/en/stable/) as graphic user interface (GUI). 
+each is running through [Voila](https://voila.readthedocs.io/en/stable/) as graphic user interfaces (GUIs). 
 
 ## Featurization Module
 
