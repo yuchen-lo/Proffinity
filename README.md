@@ -7,9 +7,15 @@
 
 Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) with respect to each specific platform.
 
+Create working environment:
+````
+conda create -n proffinity python=8.30.0
+
+````
+
 To run Proffinity, clone this github repo and install the following packages using pip install:
 ````
-pip install ipython 11plotly scikit_learn seaborn voila
+pip install ipython plotly scikit_learn seaborn voila ipywidgets==8.1.3 pycaret
 ````
 The Proffinity program is consisted of three modules, 
 - Featurization Module
