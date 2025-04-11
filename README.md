@@ -5,7 +5,7 @@
 
 ## Installation
 
-Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) 
+Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) with respect to each specific platform.
 
 To run Proffinity, clone this github repo and install the following packages using pip install:
 ````
