@@ -5,13 +5,13 @@
 
 ## Installation
 
-Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) with respect to each specific platform.
+1. Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) with respect to each specific platform.
 
-Create a new conda working environment:
+2. Create a new conda working environment:
 ````
 conda create -n proffinity python=3.9.18
 ````
-To run Proffinity, clone this github repo and install the following packages using pip install:
+3. To run Proffinity, clone this github repo and install the following packages using pip install:
 
 ````
 pip install ipython plotly scikit_learn seaborn voila ipywidgets==8.1.3 pycaret
