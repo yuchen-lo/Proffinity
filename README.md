@@ -5,9 +5,11 @@
 
 ## Installation
 
+Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) 
+
 To run Proffinity, clone this github repo and install the following packages using pip install:
 ````
-pip install ipython ipywidgets numpy pandas plotly pycaret scikit_learn matplotlib seaborn voila
+pip install ipython 11plotly scikit_learn seaborn voila
 ````
 The Proffinity program is consisted of three modules, 
 - Featurization Module
