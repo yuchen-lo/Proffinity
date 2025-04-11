@@ -12,8 +12,8 @@ Create working environment:
 conda create -n proffinity python=8.30.0
 
 ````
-
 To run Proffinity, clone this github repo and install the following packages using pip install:
+
 ````
 pip install ipython plotly scikit_learn seaborn voila ipywidgets==8.1.3 pycaret
 ````
