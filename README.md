@@ -11,10 +11,18 @@
 ````
 conda create -n proffinity python=3.9.18
 ````
-3. To run Proffinity, clone this github repo and install the following packages using pip install:
+3. Activate the proffinity conda environemnt:
+````
+conda activate proffinity
+````
+4. Install anaconda metapackage:
+````
+conda install anaconda
+````
+5. To run Proffinity, clone this github repo and install the following packages using pip install:
 
 ````
-pip install ipython plotly scikit_learn seaborn voila ipywidgets==8.1.3 pycaret
+pip install ipython plotly scikit_learn seaborn voila ipywidgets==8.1.3 pycaret Bio
 ````
 The Proffinity program is consisted of three modules, 
 - Featurization Module
