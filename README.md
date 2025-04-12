@@ -5,7 +5,7 @@
 
 ## Installation
 
-1. Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) with respect to each specific platform.
+1. Install [anaconda](https://www.anaconda.com/docs/getting-started/anaconda/install) with respect to each specific platform. Ensure that conda command is in path and can be executed directly from the command line.
 
 2. Create a new conda working environment:
 ````
