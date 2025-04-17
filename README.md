@@ -47,7 +47,7 @@ The purpose of the featurize module is to extract machine learning features from
 Inside the Proffinity directory,
 
 ````
-Voila featurizev2.ipynb
+voila featurizev2.ipynb
 ````
 
 Module operation steps: 
