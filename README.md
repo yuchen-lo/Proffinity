@@ -117,7 +117,7 @@ The script will generate two outputs:
 Inside the "Training" directory,
 
 ````
-jupyter notebook ml_regresso_train.ipynb
+jupyter notebook ml_regressor_train.ipynb
 ````
 
 ## Visualization Module
