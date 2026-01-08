@@ -111,7 +111,7 @@ echo "chain_1: $chain_1"
 chain_2=$(echo $pdb_tag | awk -F'_' '{print $3}')
 echo "chain_2: $chain_2"
 kvalue=$(echo "$line" | awk -F';' '{print $8}' | sed -E 's/([+-]?[0-9.]+)[eE]\+?(-?)([0-9]+)/(\1*10^\2\3)/g')
-k2=`echo "-1*l($kvalue*1)" | bc -l`
+k2=`echo "-1*l($kvalue*1)/2.303" | bc -l`
 echo "affinity:$k2"
 
 echo "$line" | awk -F';' '{print $3}' | tr ',' '\n' > mutant_list.txt
