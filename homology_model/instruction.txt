@@ -1,0 +1,2 @@
+Asumming that the modeller has been installed and in the path. 
+Run ./extract2.sh to performed homology modeling of the SKEMPIv2 datasets
